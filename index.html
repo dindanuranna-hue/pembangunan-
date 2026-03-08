@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library Arsip Perencanaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 p-2 rounded-lg">
+                    <i class="fas fa-book-open text-white text-xl"></i>
+                </div>
+                <h1 class="text-xl font-bold tracking-tight text-blue-900">E-LIBRARY <span class="text-blue-600">ARSIP</span></h1>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium">
+                <a href="#" class="hover:text-blue-600 transition">Beranda</a>
+                <a href="#" class="hover:text-blue-600 transition">Kategori</a>
+                <a href="#" class="hover:text-blue-600 transition">SOP Pengarsipan</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-gradient-to-r from-blue-900 to-blue-700 py-16 px-4">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-6">Akses Cepat Dokumen Perencanaan</h2>
+            <div class="relative max-w-2xl mx-auto">
+                <input type="text" placeholder="Cari dokumen (Contoh: Renja 2024, Laporan Realisasi)..." 
+                       class="w-full py-4 px-6 rounded-full shadow-xl focus:outline-none focus:ring-4 focus:ring-blue-300">
+                <button class="absolute right-3 top-2 bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-500 transition">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <aside class="md:col-span-1">
+                <h3 class="text-lg font-bold mb-4 flex items-center"><i class="fas fa-filter mr-2"></i> Kategori Arsip</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="block p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition border-l-4 border-blue-600 font-semibold text-blue-600">Semua Dokumen</a></li>
+                    <li><a href="#" class="block p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition border-l-4 border-transparent">Renja (Rencana Kerja)</a></li>
+                    <li><a href="#" class="block p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition border-l-4 border-transparent">Laporan Realisasi Fisik</a></li>
+                    <li><a href="#" class="block p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition border-l-4 border-transparent">Laporan Keuangan</a></li>
+                    <li><a href="#" class="block p-3 bg-white rounded-lg shadow-sm hover:bg-blue-50 transition border-l-4 border-transparent">Dokumen Koordinasi</a></li>
+                </ul>
+            </aside>
+
+            <section class="md:col-span-3">
+                <div class="flex justify-between items-center mb-6">
+                    <h3 class="text-xl font-bold text-gray-700">Arsip Terbaru</h3>
+                    <span class="text-sm text-gray-500">Menampilkan 3 dokumen terbaru</span>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-4">
+                                <i class="far fa-file-pdf text-red-500 text-3xl"></i>
+                                <span class="bg-green-100 text-green-700 text-xs px-2 py-1 rounded font-bold uppercase">Final</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 leading-tight mb-2">Renja Tahunan - Bidang Administrasi 2024</h4>
+                            <p class="text-xs text-gray-500 mb-4 italic">Diunggah: 12 Feb 2026</p>
+                            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
+                                Lihat Dokumen <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition">
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-4">
+                                <i class="far fa-file-excel text-green-600 text-3xl"></i>
+                                <span class="bg-yellow-100 text-yellow-700 text-xs px-2 py-1 rounded font-bold uppercase">Draft</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 leading-tight mb-2">Realisasi Fisik & Keuangan Triwulan I</h4>
+                            <p class="text-xs text-gray-500 mb-4 italic">Diunggah: 05 Mar 2026</p>
+                            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
+                                Lihat Dokumen <i class="fas fa-arrow-right ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden hover:shadow-md transition bg-blue-50">
+                        <div class="p-5">
+                            <div class="flex justify-between items-start mb-4">
+                                <i class="fas fa-qrcode text-gray-800 text-3xl"></i>
+                                <span class="bg-blue-200 text-blue-700 text-xs px-2 py-1 rounded font-bold uppercase">QR Access</span>
+                            </div>
+                            <h4 class="font-bold text-gray-800 leading-tight mb-2">SOP Digitalisasi Arsip Perencanaan</h4>
+                            <p class="text-xs text-gray-500 mb-4 italic">Akses Cepat Via Mobile</p>
+                            <a href="#" class="inline-flex items-center text-blue-600 font-semibold hover:underline">
+                                Scan QR Code <i class="fas fa-qrcode ml-2 text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 mt-12 border-t-4 border-blue-600">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <p class="text-white font-semibold">E-Library Arsip Dokumen Perencanaan</p>
+            <p class="text-sm mt-2">Dikelola untuk meningkatkan efisiensi dan transparansi data administrasi.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
